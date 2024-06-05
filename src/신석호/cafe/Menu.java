@@ -3,18 +3,21 @@ package 신석호.cafe;
 import java.util.ArrayList;
 import java.util.List;
 
+// 메뉴 항목을 나타내는 클래스
 public class Menu {
     private String name;
-    private int price;
+    private double price;
 
-    List<Menu> menus = new ArrayList<>();
-//    menus.addMenu("Americano");
-//    menus.addMenu("Latte");
-//    menus.addMenu("Cappuccino");
-
-    public Menu(String name, int price) {
+    public Menu(String name, double price) {
         this.name = name;
         this.price = price;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }
